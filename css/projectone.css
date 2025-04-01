@@ -1,0 +1,201 @@
+/* CSS for Project Detail Page */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;600&display=swap');
+
+/* Set the background color of the whole page */
+body {
+    background-color: #32470b; /* Dark green background */
+    color: #ffffff; /* White text for contrast */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.twitter-Cloneheader{
+    font-family:'Reem kufi', sans-serif ;
+    letter-spacing: .2em;
+    font-size: 1em;
+    font-weight: bold;
+    line-height: 1.6;
+    position: relative;
+    left: 600px;
+    opacity: 0.8;
+
+}
+
+/* Center the content and give it some padding */
+.project-detail {
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #32470b; /* Keep green background for project detail page */
+    color: #ffffff; /* Ensure text is white */
+    border-radius: 8px;
+    font-family:'Reem kufi', sans-serif ;
+}
+
+/* Project summary section */
+.project-summary {
+    margin-bottom: 20px;
+    font-family:'Reem kufi', sans-serif ;
+    position: relative;
+    left: 180px;
+
+}
+
+.overview{
+    font-family:'Reem kufi', sans-serif ;
+    letter-spacing: .1em;
+    font-size: 1.6em;
+    line-height: 1.6;
+    font-weight: bold;
+    position: relative;
+    left:150px;
+    opacity: 0.8;
+    
+}
+.description{
+    font-family:'Reem kufi', sans-serif ;
+    letter-spacing: .1em;
+    font-size: 1.1em;
+    line-height: 1.6;
+    opacity: 0.8;
+
+}
+
+
+/* Project grid */
+.project-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 30px;
+    left: 150px;
+    position: relative;
+}
+
+.grid-item {
+    flex: 1;
+    background-color:#32470b ;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    left: 10px;
+    transition: transform 0.3s ease; 
+}
+
+.grid-item:hover{
+    background-color: #556d3e;  
+    color: #fff;  
+    transform: scale(1.01); 
+    border-color: #556d3e;
+
+}
+
+.grid-item h3 {
+    font-size: 1.2rem;
+    color: white;
+    margin-bottom: 10px;
+    font-family:'Reem kufi', sans-serif ;
+    letter-spacing: .1em;
+    opacity: 0.8;
+}
+
+.grid-item ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    font-family:'Reem kufi', sans-serif ;
+
+}
+
+.grid-item li {
+    font-size: 1em;
+    line-height: 1.1;
+    font-family:'Reem kufi', sans-serif ;
+    letter-spacing: .1em;
+    opacity: 0.8;
+
+}
+
+/* Features section */
+.project-details {
+    margin-top: 40px;
+}
+
+.project-details h3 {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+    font-family:'Reem kufi', sans-serif ;
+    letter-spacing: .1em;
+    position: relative;
+    left: 180px;
+    opacity: 0.8;
+
+}
+
+.project-details ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    font-family:'Reem kufi', sans-serif ;
+    letter-spacing: .1em;
+    font-size: 1em;
+}
+
+.project-details li {
+    font-size: 1em;
+    line-height: 1.6;
+    position: relative;
+    left: 180px;
+    opacity: 0.8;
+    
+}
+
+/* Styling for the "Back to Projects" link */
+header nav a:hover {
+    text-decoration: underline;
+}
+
+.header-photo {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.header-image {
+    width: 400px; /* Make it responsive by adjusting to the container's width */
+    max-width: 600px; /* Maximum width for the image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: adds rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional: adds shadow */
+    position: relative;
+    bottom:600px;
+    right:500px;
+    transition: transform 0.3s ease; 
+}
+
+.header-image:hover {
+    background-color: #556d3e;  
+    color: #fff;  
+    transform: scale(1.01); 
+    border-color: #556d3e;
+
+}
+
+.header-image:active {
+    background-color: #9a9a5a;  
+    border-color: #9a9a5a;  
+    transform: scale(0.95);  
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .project-grid {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .grid-item {
+        width: 100%;
+    }
+}

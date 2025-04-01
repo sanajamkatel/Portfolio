@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SanaCodes</title>
+
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Yatra+One&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon_io (1)/android-chrome-512x512.png" type="image/x-icon">
+    
+
+ 
+
+    <!-- custom css -->
+
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/mediaqueries.css"> -->
+
+    <link rel="stylesheet" href="css/grass-animation.css">
+    <link rel="stylesheet" href="mediaqueriesdesktop.css" media="screen and (min-width: 1024px)">
+</head>
+
+<body>
+
+    <!-- header design -->
+
+    <header class="header">
+        <!-- Logo with Avacado Image -->
+        <a href="#" class ="logo">
+            <img src="images/avacadoLogo.png" alt="Avacado Logo" class="avacado-logo">
+        </a>
+       <i class="bx bx-menu" id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#home" class="active">HOME</a>
+            <a href="#about">ABOUT ME</a>
+            <a href="#projects">PROJECTS</a>
+            <!-- <a href="#skills">SKILLS</a> -->
+            <a href="#contact">CONTACT</a>
+
+            <!-- LinkedIn Icon-->
+             <a href="https://www.linkedin.com/in/sadhana-jamkatel-795787265/" target="_blank" title="Visit my LinkedIn profile">
+                <img src="images/linkedin.png" alt="LinkedIn" class="icon">
+             </a>
+        </nav>
+    </header>
+
+    <!-- home section design -->
+
+    <section class="home" id="home-section">
+        <div class="home-container">
+             <!-- Description Section -->
+              <div class="description">
+                <p class="intro-line">HI, MY NAME IS</p>
+                <p class="name">Sadhana Jamkatel ( Sana )</p>
+                <p class="sub-heading">Computer Science Student, Crafting Code, Creating Art</p>
+                <div class="github">
+                    <a href="https://github.com/Sadhanajx10" target="_blank" class="github-link">
+                        <img src="images/bxl-github.svg" alt="Github" class="github-icon" />
+                    </a>
+                </div>
+                <div class="Resume">
+                    <a href="files/SadhanaJamkatelnsbeCS&Data25.pdf" download="Sadhana_Jamkatel_Resume.pdf" class="download-btn">
+                        Download My Resume
+                    </a>
+                </div>
+                 <!-- Profile Picture -->
+                <div class="profile-picture">
+                    <img src="images/home-profile.png" alt="Profile Picture"/>
+                    <span class="hello-text"> Hello!</span> <!-- Fixed image tag -->
+                </div>
+              </div>
+        </div>
+        <img
+        src="./images/mouse-cursor.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="scrollToSection('#about')" />
+    </section>
+
+    <!-- About Me Section -->
+    <section class="about" id="about">
+
+        <div class="about-container">
+            <img src="images/6523709C-19F3-49FA-9017-69BA0E743ABF.JPEG" alt="Profile Picture" class="about-img">
+            <a href="files/SadhanaJamkatelnsbeCS&Data25.pdf" download="Sadhana_Jamkatel_Resume.pdf" class="resume-btn">
+                <div class="pdf-icon-container">
+                    <img src="images/bxs-file-pdf.svg" alt="PDF Icon" class="pdf-icon"> 
+                </div>
+                <div class="Letter_to_resume">
+                    <p>Resume</p>
+                </div>
+            </a>
+            
+
+        </div>
+
+        <div class="about-content">
+            <!-- About Me Header -->
+            <div class="about-header">
+                <h2 class="heading">About Me</h2>
+            </div>
+
+            <div class="Sub-about-me-part"> <p>
+                Hi! I'm Sadhana Jamkatel, a B.S. Computer Science major at North Central College. I have a passion for web design and graphics, finding joy in creating visually appealing and user-friendly interfaces. At the same time, I’m continually honing my skills in backend development to build seamless and efficient systems.
+            </p>
+            <p>
+                Technology fascinates me, and I strive to stay updated with its ever-evolving landscape. Whether it is  experimenting with new tools, developing creative solutions, or tackling technical challenges, I’m always eager to learn and grow.
+            </p>
+            <p>
+                When I am  not coding, you will likely find me exploring design trends, learning something new, or working on a personal project.
+            </p></div>
+
+            <div class="Tech-skill-aboutme">
+                <h3>Here are a few technologies I am experienced with:</h3>
+        
+                <div class="icons-container">
+                    <!-- GitHub Icon -->
+                    <div class="tech-item">
+                        <a href="https://github.com/" target="_blank">
+                            <img src="images/bxl-github.svg" alt="GitHub" class="tech-icon" />
+                            <p>GITHUB</p>
+                        </a>
+                    </div>
+                
+                    <!-- JavaScript Icon -->
+                    <div class="tech-item">
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
+                            <img src="images/bxl-javascript.svg" alt="JavaScript" class="tech-icon" />
+                            <p>JAVASCRIPT</p>
+                        </a>
+                    </div>
+                
+                    <!-- Python Icon -->
+                    <div class="tech-item">
+                        <a href="https://www.python.org/" target="_blank">
+                            <img src="images/bxl-python.svg" alt="Python" class="tech-icon" />
+                            <p>PYTHON</p>
+                        </a>
+                    </div>
+                
+                    <!-- Java Icon -->
+                    <div class="tech-item">
+                        <a href="https://www.oracle.com/java/" target="_blank">
+                            <img src="images/bxl-java.svg" alt="Java" class="tech-icon" />
+                            <p>JAVA</p>
+                        </a>
+                    </div>
+                
+                    <!-- React Icon -->
+                    <div class="tech-item">
+                        <a href="https://reactjs.org/" target="_blank">
+                            <img src="images/bxl-react.svg" alt="React" class="tech-icon" />
+                            <p>REACT</p>
+                        </a>
+                    </div>
+                
+                    <!-- Node.js Icon -->
+                    <div class="tech-item">
+                        <a href="https://nodejs.org/" target="_blank">
+                            <img src="images/bxl-nodejs.svg" alt="Node.js" class="tech-icon" />
+                            <p>NODE.JS</p>
+                        </a>
+                    </div>
+                
+                    <!-- Figma Icon -->
+                    <div class="tech-item">
+                        <a href="https://www.figma.com/" target="_blank">
+                            <img src="images/bxl-figma.svg" alt="Figma" class="tech-icon" />
+                            <p>FIGMA</p>
+                        </a>
+                    </div>
+                
+                    <!-- Unity Icon -->
+                    <div class="tech-item">
+                        <a href="https://unity.com/" target="_blank">
+                            <img src="images/bxl-unity.svg" alt="Unity" class="tech-icon" />
+                            <p>UNITY</p>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="last-text-aboutme"> 
+                    <a href="https://www.linkedin.com/in/sadhana-jamkatel-795787265/" target="_blank" class="linkedin-link">
+                        Feel free to explore my work and connect with me!
+                    </a>
+                </div>
+            </div>
+     </div>
+     <img
+        src="./images/mouse-cursor.png"
+        alt="Arrow icon"
+        class="about-arrow"
+        onclick="scrollToSection('#projects')" />
+       
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="projects-header">
+            <p class="section-intro">Browse My Recent</p>
+            <h1 class="projects-title">Projects</h1>
+        </div>
+    
+        <div class="projects-grid">
+            <!-- Project 1 -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images/project-one/cover.png" alt="Project 1" class="project-img" />
+                </div>
+                <h2 class="project-title">Twitter Clone</h2>
+                <p class="project-description">A full-stack social media app built with React, Node.js, Express.js, MongoDB, and Cloudinary. Features include user authentication, profile management, tweeting, and real-time notifications. Utilizes JWT for secure authentication</p>
+                <a href="projectone.html" class="btn btn-primary">
+                    <p>View Project</p>
+                </a>
+                <a href="https://github.com/Sadhanajx10/twitter-clone" class="btn btn-primary" target="_blank">GitHub</a>
+            </div>
+
+             <!-- Project 2 -->
+             <div class="project-card">
+                <div class="project-image">
+                    <img src="images/careconnect cover.png" alt="Project 2" class="project-img" />
+                </div>
+                <h2 class="project-title">End-to-End Medical Recommendation System</h2>
+                <p class="project-description">Developed a machine learning-powered medical recommendation system that predicts diseases based on symptoms and suggests treatments using models like SVC, Random Forest, and Gradient Boosting.
+                    Designed and deployed RESTful APIs with Flask, built an interactive web interface with HTML and Bootstrap, and integrated ChromaDB for AI-powered recommendations.</p>
+                <a href="projecttwo.html" class="btn btn-primary">
+                    <p>View Project</p>
+                </a>
+                <a href="https://github.com/Sadhanajx10/End-to-End-Medical-Recommendation-System" class="btn btn-primary" target="_blank">GitHub</a>
+            </div>
+
+              <!-- Project 3 -->
+              <div class="project-card">
+                <div class="project-image">
+                    <img src="images/sales dashboard cover.png" alt="Project 3" class="project-img" />
+                </div>
+                <h2 class="project-title">Sales Dashboard</h2>
+                <p class="project-description">Applied data analysis and visualization techniques to transform raw sales data into actionable insights, leveraging Tableau’s advanced features for comparative analysis, trend tracking, and KPI reporting.</p>
+                <a href="project-three.html" class="btn btn-primary">
+                    <p>View Project</p>
+                </a>
+                <a href="https://github.com/Sadhanajx10/Sales-Dashboard" class="btn btn-primary" target="_blank">GitHub</a>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images/Pricewise.png" alt="Project 4" class="project-img" />
+                </div>
+                <h2 class="project-title">Price Tracker Website</h2>
+                <p class="project-description">A full-stack eCommerce price tracker built with Next.js, Bright Data, Cheerio, MongoDB, and Tailwind CSS. It features real-time price tracking, automated web scraping with cron jobs, and email notifications to keep users updated on price changes. The app provides a responsive and intuitive UI.</p>
+                <a href="projectfour.html" class="btn btn-primary"></a>
+                    <p>View Project</p>
+                </a>
+                <a href="https://github.com/Sadhanajx10/Price-Tracker" class="btn btn-primary" target="_blank">GitHub</a>
+            </div>
+        </div>
+        <img
+        src="./images/mouse-cursor.png"
+        alt="Arrow icon"
+        class="project-arrow"
+        onclick="scrollToSection('#contact')" />
+    
+    </section>
+
+    <!-- Skill Section -->
+    
+    <!-- <section class="skills" id="skills">
+        <div class="skills-header">
+            <p class="section-intro">Explore My</p>
+            <h1 class="skills-title">Skills</h1>
+        </div>
+    
+        <div class="skills-grid"> -->
+            <!-- Skill 1 -->
+            <!-- <div class="skill-card">
+                <img src="images/skills/html.svg" alt="HTML" class="skill-img" />
+                <h2 class="skill-title">HTML & CSS</h2>
+                <p class="skill-description">Expertise in creating responsive web designs and user-friendly interfaces.</p>
+            </div> -->
+    
+            <!-- Skill 2 -->
+            <!-- <div class="skill-card">
+                <img src="images/skills/javascript.svg" alt="JavaScript" class="skill-img" />
+                <h2 class="skill-title">JavaScript</h2>
+                <p class="skill-description">Proficient in dynamic scripting, building interactive web applications.</p>
+            </div> -->
+    
+            <!-- Skill 3 -->
+            <!-- <div class="skill-card">
+                <img src="images/skills/python.svg" alt="Python" class="skill-img" />
+                <h2 class="skill-title">Python</h2>
+                <p class="skill-description">Experience in backend development, data analysis, and automation.</p>
+            </div> -->
+    
+            <!-- Skill 4 -->
+            <!-- <div class="skill-card">
+                <img src="images/skills/react.svg" alt="React" class="skill-img" />
+                <h2 class="skill-title">React</h2>
+                <p class="skill-description">Building reusable components and scalable front-end architectures.</p>
+            </div> -->
+    
+            <!-- Skill 5 -->
+            <!-- <div class="skill-card">
+                <img src="images/skills/nodejs.svg" alt="Node.js" class="skill-img" />
+                <h2 class="skill-title">Node.js</h2>
+                <p class="skill-description">Backend server setup and API integration for scalable applications.</p>
+            </div> -->
+    
+            <!-- Skill 6 -->
+            <!-- <div class="skill-card">
+                <img src="images/skills/figma.svg" alt="Figma" class="skill-img" />
+                <h2 class="skill-title">Figma</h2>
+                <p class="skill-description">Designing visually stunning prototypes and mockups for UI/UX.</p>
+            </div>
+        </div>
+    </section> -->
+    <section class="contact" id="contact">
+    <div class="contact-header">
+        <p class="section-intro">Get In Touch</p>
+        <h1 class="contact-title">Contact Me</h1>
+    </div>
+
+    <div class="contact-content">
+        <!-- Contact Information -->
+        <div class="contact-info">
+            <h2>Feel Free to Reach Out</h2>
+            <p>If you have any questions, feel free to reach out to me using the form below or via my social media links!</p>
+
+            <ul class="contact-links">
+                <li>
+                    <a href="mailto:sadhanajamkatel0010@gmail.com" class="contact-link">
+                        <i class="bx bx-envelope"></i> Email
+                    </a>
+                </li>
+                <li>
+                    <a href="tel:+3318149876" class="contact-link">
+                        <i class="bx bx-phone"></i> Phone
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/sadhana-jamkatel-795787265/" class="contact-link" target="_blank">
+                        <i class="bx bxl-linkedin"></i> LinkedIn
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form">
+            <form action="https://formspree.io/f/xbldlodg" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required />
+                <input type="email" name="email" placeholder="Your Email" required />
+                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit" class="btn">
+                    <img src="images/bxs-hand-right.svg" alt="Telegram Icon" class="hand-icon">
+                Send Message
+                </button>
+            </form>
+        </div>
+    </div>
+    </section>
+    <footer>
+        <nav>
+          <div class="footer">
+            <p>Copyright &#169; 2025 Sadhana Jamkatel. All Rights Reserved.</p>
+      </footer>
+
+    
+    
+
+    
+
+    <!-- for the grass animation -->
+     <div class="grass-container">
+        <div class="grass" style="left: 10%; height: 60px;"></div>
+        <div class="grass" style="left: 20%; height: 60px;"></div>
+        <div class="grass" style="left: 30%; height: 60px;"></div>
+        <div class="grass" style="left: 40%; height: 60px;"></div>
+        <div class="grass" style="left: 50%; height: 60px;"></div>
+        <div class="grass" style="left: 60%; height: 60px;"></div>
+     </div>
+     <script src="js/script.js"></script>   
+</body>
+</html>
