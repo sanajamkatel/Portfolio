@@ -14,8 +14,9 @@
 body{
     font-family: Arial, sans-serif;
     background-color: #32470b;
-    margin: 20px;
+    margin: 0;
     padding: 0;
+    padding-top: 100px; /* Account for fixed header with border */
 }
 
 
@@ -24,21 +25,59 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #32470b;
-    padding: 10px 20px;
+    background-color: #ffffff;
+    padding: 15px 40px;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    margin: 20px 40px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    position: fixed;
     top: 0;
-    bottom: 0;
- 
+    left: 0;
+    right: 0;
+    z-index: 1000;
 }
 
 /*  Logo Styling */
 .logo{
     display: flex;
     align-items: center;
-    color: white;
-    font-size: 1.8em;
     text-decoration: none;
+    gap: 12px;
+}
+
+.logo-icon {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, #4CAF50, #45a049);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-weight: bold;
+    font-size: 20px;
+    color: white;
+    font-family: 'Arial', sans-serif;
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+    letter-spacing: 0.5px;
+}
+
+.logo-tagline {
+    font-size: 11px;
+    color: #666;
+    font-family: 'Arial', sans-serif;
+    margin-top: 2px;
 }
 
 .avacado-logo{
@@ -55,14 +94,40 @@ body{
 /* Navigation Bar styling */
 .navbar{
     display: flex;
-    justify-content: center;
     align-items: center;
-    gap: 30px;
-    left: 10px;
-    top: -10px;
-    position: relative;
+    gap: 40px;
 }
 
+.nav-link {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 8px 0;
+    position: relative;
+    transition: color 0.3s ease;
+    letter-spacing: 0.5px;
+}
+
+.nav-link:hover {
+    color: #4CAF50;
+}
+
+.nav-link.active {
+    color: #4CAF50;
+}
+
+.nav-link.active::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #4CAF50;
+    border-radius: 1px;
+}
 
 .navbar a{
     font-family: "Yatra One", serif;
@@ -97,6 +162,54 @@ body{
     transform: scale(1.2)
 }
 
+/* Search Section Styling */
+.search-section {
+    display: flex;
+    align-items: center;
+}
+
+.search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search-icon {
+    position: absolute;
+    left: 12px;
+    color: #999;
+    font-size: 16px;
+}
+
+.search-input {
+    padding: 10px 15px 10px 40px;
+    border: 1px solid #e0e0e0;
+    border-radius: 25px;
+    font-size: 14px;
+    color: #333;
+    background-color: #f8f9fa;
+    width: 250px;
+    transition: all 0.3s ease;
+}
+
+.search-input:focus {
+    outline: none;
+    border-color: #4CAF50;
+    background-color: white;
+    box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.1);
+}
+
+.search-input::placeholder {
+    color: #999;
+}
+
+/* Mobile Menu Icon */
+#menu-icon {
+    display: none;
+    font-size: 24px;
+    color: #333;
+    cursor: pointer;
+}
 
 /* for shiny effect */
 
@@ -962,990 +1075,53 @@ box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
     left: 530px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media (min-width: 1025px) {
-    /* Ensuring the main layout is in a row with proper spacing */
-
-    /* General  */
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;600&display=swap');
-*{
-    margin: 0;
-    padding:0;
-    box-sizing: border-box;
-    font-family: 'Times New Roman', Times, serif;
-    color:white;
-    
-}
-
-/* Body styling */
-
-body{
-    font-family: Arial, sans-serif;
-    background-color: #32470b;
-    margin: 20px;
-    padding: 0;
-}
-
-
-/* Header Styling*/
-.header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #32470b;
-    padding: 10px 20px;
-    top: 0;
-    bottom: 0;
- 
-}
-
-/*  Logo Styling */
-.logo{
-    display: flex;
-    align-items: center;
-    color: white;
-    font-size: 1.8em;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.avacado-logo{
-    width: 150px;
-    height: 150px;
-    margin-right: 10px;
-    cursor: pointer;
-    position: fixed;
-    left: -20px;
-    top: -9px
-}
-
-
-/* Navigation Bar styling */
-.navbar{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    left: 30px;
-    top: -10px;
-    position: relative;
-
-}
-
-
-.navbar a{
-    font-family: "Yatra One", serif;
-    color:white;
-    text-decoration:none;
-    font-size: 1.4em;
-    padding: 10px 20px;
-    background-color: #32470b;
-    border-radius: 5px;
-    position: relative;
-    overflow:hidden;
-    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
-    letter-spacing:0.7;
-}
-
-
-.navbar a:hover{
-    background-color:#32470b;
-    color: #000;
-    transform: scale(1.1);
-}
-
-
-.navbar .icon{
-    width: 55px;
-    height: 55px;
-    transition: transform 0.3s ease;
-}
-
-
-.navbar  .icon:hover{
-    transform: scale(1.2)
-}
-
-
-/* for shiny effect */
-
-.navbar a::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(120deg, rgba(255,255,255,0.4), rgba(255,255,255,0.1));
-    transform: skewX(-20deg);
-    transition:a all 0.3s ease;
-
-}
-
-
-.navbar a:hover::before{
-    left:100%;
-    transition: left 0.5s ease;
-
-}
-
-/* Menu Icon */
-#menu-icon{
-    font-size: 3.6rem;
-    color: white;
-    display:none;
-    cursor: pointer;
-
-}
-
-/* Home Section Styling */
-.home-section {
-    display: flex; 
-    align-items: center;  
-    justify-content: center; 
-    height: 100vh; 
-    padding: 20px;
-    background-color: #32470b; 
-    color: white; 
-}
-
-.home-container {
-    display: flex; 
-    align-items: center;
-    gap: 300px; 
-    max-width: 10000px; 
-    margin: 0 auto;
-}
-
-.description {
-    max-width: 800px;
-    margin-left: 10px;
-    padding-left: 20px;
- 
-
-}
-.intro-line{
-    font-size: 1.4em;
-    font-weight: 300;
-    font-family: "Yatra One", serif;
-    margin-bottom:10px;
-    text-transform: uppercase;
-    color: white;
-    opacity:0.4;
-    top: 100px;
-    position: relative;
-
-}
-
-
-.name{
-    font-family:'Reem kufi', sans-serif ;
-    font-size: 3.8em;
-    color: white;
-    letter-spacing: 0;
-    margin: 0;
-    position: relative;
-    top:100px;
-}
-
-.sub-heading{
-    font-family:'Reem kufi', sans-serif;
-    font-size: 2.1em;
-    color: white;
-    letter-spacing: 0.4;
-    margin: 0;
-    opacity: 0.6;
-    position: relative;
-    top: 100px;
-}
-.github {
-    margin-top: 20px;
-    padding-left: 90px;
-    margin-left: 200px;
-}
-
-.github-icon {
-    width: 80px; 
-    height: 80px;
-    transition:transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    position: relative;
-    top: 120px;
-}
-
-.github-icon:hover{
-    color: goldenrod;
-    transform: scale(1.3);
-}
-
-
-/* Active (Click) effect */
-
-.github-icon:active{
-    transform: scale(0.8);
-    box-shadow: 0 0 20px 5px rgba(255,215,0,0.7);
-}
-
-
-/* button and download my resume section */
-
-.download-btn {
-    display: inline-block;
-    padding: 12px 30px;
-    font-size: 1.2em;
-    color: white;
-    background-color: #32470b;  
-    border: 2px solid white;  
-    border-radius: 10px;
-    text-decoration: none;
-    text-align: center;
-    transition: all 0.3s ease;
-    margin-top: 50px;
-    margin-left: 220px;
-    position: relative;
-    top: 100px;
-}
-.download-btn:hover {
-    background-color: #556d3e;  
-    color: #fff;  
-    transform: scale(1.05); 
-    border-color: #556d3e;  
-}
-
-.download-btn:active {
-    background-color: #9a9a5a;  
-    border-color: #9a9a5a;  
-    transform: scale(0.95);  
-}
-
-/* Profile Picture Styling */
-.profile-picture{
-    flex-shrink: 0;  
-    position: relative; 
-    left: 700px; 
-    top: -400px; 
-
-}
-
-.profile-picture img {
-    width: 450px; 
-    height: 450px;
-    border-radius: 50%;  
-    object-fit: cover;
-    transition: transform 0.3s ease;
-}
-
-/* Hover effect */
-.profile-picture img:hover {
-    transform: scale(1.05); 
-}
-
-
-/* Text styling for the Hovered text */
-
-.hello-text{
-    position: absolute;
-    top: 0px;
-    left:50%;
-    transform: translateX(-30%);
-    opacity:0;
-    color: white;
-    font-size: 1.5em;
-    transition: opacity 0.8s ease;
-    visibility: hidden;
-    font-family:'Reem kufi', sans-serif;
-    font-size: 3em;
-}
-
-.profile-picture:hover .hello-text{
-    opacity: 0.7;
-    visibility: visible;
-}
-
-
-
-
-/* About me section */
-
-.about{
-    padding: 50px 100px;
-    background-color: #32470b;
-    color: white;
-}
-
-.about-container{
-    display: flex;
-    align-items: flex-start;
-    gap: 50px;
-    flex-wrap: wrap;
-    position: relative;
-    top:70px;
-    font-family: 'Reem Kufi' , sans-serif;
- 
-}
-
-
-/* About me profile picture container */
-
-.about-img-container{
-    text-align: center;
-}
-
-.about-img{
-    width: 380px;
-    height:380px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 5px colid white;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-    margin-bottom: 20px;
-    border: 5px solid #7e4e23; 
-    position: relative;
-    left:-70px;
-}
-
-
-/* Resume about me download button */
-
-.resume-btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px; 
-    padding: 12px 30px;
-    font-size: 1.2em;
-    color: white;
-    background-color: #32470b;
-    border: 50px solid transparent;
-    border-radius: 10px;
-    text-decoration: none;
-    position: relative; 
-    transition: all 0.3s ease;
-}
-
-
-.pdf-icon-container {
-    position: absolute;
-    left: -110px;
-    top: 50%;
-    transform: translateX(-50%);
-}
-
-
-.pdf-icon{
-    width: 50px;
-    height: 50px;
-    transition: transform 0.3s ease;
-    position: relative;
-    top:300px;
-    left:-240px;
-}
-
-.Letter_to_resume{
-    font-family: 'Reem Kufi' , sans-serif;
-    display: inline-block;
-    padding: 10px 15px;
-    font-size: 1.2em;
-    color: white;
-    background-color: #32470b;  
-    border: 2px solid white;  
-    border-radius: 50px;
-    text-decoration: none;
-    text-align: center;
-    transition: all 0.3s ease;
-    position: relative;
-    left: -430px;
-    top:400px;
-    
-}
-
-.Letter_to_resume:hover{
-    background-color: #556d3e;  
-    color: #fff;  
-    transform: scale(1.05); 
-    border-color: #556d3e; 
-}
-
-/* Styling for the 'About Me' header */
-.about-header {
-    text-align: center; 
-    margin-bottom: 10px; 
-    position: relative;
-    left:-30px;
-    top: -400px;
-    color: white;
-    
-}
-
-
-.about-header .heading {
-    font-size: 2.5em;   
-    font-family: 'Reem Kufi', sans-serif; 
-    color: white; 
-    letter-spacing: 0.3em;
-    opacity: 0.6;
-}
-
-.about-header .heading:hover{
-    transform: scale(1.05); 
-    transition: all 0.3s ease;
-    color: white;
-    opacity: 1;
-
-}
-
-/* Sub About Me Section */
-.Sub-about-me-part {
-    top: -390px;
-    padding: 20px; 
-    background-color:#32470b; 
-    color: white;
-    font-family: 'Reem Kufi', sans-serif;
-    left: 350px;
-    position: relative;
-    word-wrap: break-word; 
-    max-width: 60%;
-    letter-spacing: 0.1em;
-    font-weight: 80; 
-    line-height: 1.6;
-    opacity: 0.7;
-    font-size: 1.05em;
-}
-
-.Tech-skill-aboutme {
-    padding: 20px;
-    background-color: #32470b; 
-    color: white;
-    border-radius: 10px;
-    margin-top: 30px;
-    position: relative;
-    left: -120px;
-}
-
-.Tech-skill-aboutme h3 {
-    font-size: 1.8em;
-    font-family: 'Reem Kufi', sans-serif;
-    margin-bottom: 20px; 
-    top: -445px;
-    left: 470px;
-    position: relative;
-    letter-spacing: 0.1em;
-    font-weight: 80; 
-    line-height: 1.6;
-    opacity: 0.8;
-    font-size: medium;
-
-}
-
-/* Icons Container as a Grid */
-.icons-container {
-    display: grid;
-    grid-template-columns: repeat(4, 0.1fr);
-    gap: 60px; 
-    justify-items: center; 
-    position: relative;
-    left:520px;
-    bottom: 440px;
-    
-}
-
-/* Tech Item (Icon and Text) */
-.tech-item {
-    position: relative;
-    font-family: 'Reem Kufi', sans-serif;
-    left: -20px;
-}
-
-/* Tech Icon */
-.tech-icon {
-    width: 40px; 
-    height: 40px; 
-    margin-bottom: 10px; 
-    transition: transform 0.3s ease; 
-}
-
-/* Hover Effect for Icons */
-.tech-item:hover .tech-icon {
-    transform: scale(1.1); 
-}
-
-/* Tech Text below the Icon */
-.tech-item p {
-    font-size: 1em;
-    color: white;
-    margin: 0;
-    opacity: 0.8;
-    letter-spacing: 0.5px;
-    transition: opacity 0.3s ease;
-}
-
-/* Hover Effect for Text */
-.tech-item:hover p {
-    opacity: 1; 
-}
-
-
-.last-text-aboutme {
-    left: 450px;
-    bottom: 415px;
-    position: relative;
-    font-family: 'Reem Kufi', sans-serif;
-    font-size: 1.3em;
-    color: white;
-    margin: 0;
-    opacity: 0.8;
-}
-
-.linkedin-link {
-    text-decoration: none; 
-    color: white; 
-    transition: all 0.3s ease; 
-    padding: 5px 15px; /* Adds space around the text for border */
-    border-radius: 10px;
-}
-
-/* Glowing effect on hover */
-.linkedin-link:hover {
-    background-color: #556d3e;  
-    color: #fff;  
-    transform: scale(1.05); 
-    border-color: #556d3e;
-    
-}
-
-
-/* Project Styling  */
-#projects {
-    padding-bottom: 120px; /* Avoid extra space at the bottom */
-
-   
-}
-/* Projects Grid */
-.projects-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 30px;
-    padding: 20px;
-    width: 1190px;
-
-}
-  
-  /* Project Card */
-.project-card {
-    top: 100px;
-    position: relative;
-    border-radius: 3px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s, box-shadow 0.3s;
-    text-align: center;
-    padding: 15px;
-    margin-top: 10px;
-}
-  
-.project-card:hover {
-transform: scale(1.02);
-box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
-}
-
- /* General Styling for All Project Images */
-.project-img {
-    width: 100%; 
-    height: auto; 
-    object-fit: cover; 
-    transition: transform 0.3s ease; 
-}
-  
-  /* Specific Styling for Project 1 */
-.project-1 .project-img {
-    width: 80%; 
-    border: 5px solid white; 
-    border-radius: 10px; 
-}
-  
-  /* Specific Styling for Project 2 */
-.project-2 .project-img {
-    width: 80%;
-    height: 250px;
-    border: 5px solid white; 
-    border-radius: 10px; 
-}
-
-  /* Specific Styling for Project 3 */
-.project-3 .project-img {
-    width: 80%; 
-    height: 250px;
-    border: 5px solid white; 
-    border-radius: 10px; 
-}
-
-.project-4 .project-img {
-    width: 80%; 
-    height: 250px;
-    border: 5px solid white; 
-    border-radius: 10px; 
+/* Responsive Design for Modern Navigation */
+@media (max-width: 768px) {
+    .header {
+        padding: 15px 20px;
     }
-
-/* Hover Effect for All Images */
-.project-img:hover {
-transform: scale(1.05); 
-box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); 
-}
-
-
-  /* projects-header */
-.projects-header{
-    font-family: 'Reem Kufi', sans-serif;
-}
-
-.section-intro, .projects-title{
-    position: static;
-    margin-bottom: 20px;
-}
-.section-intro{
-    text-align: center; 
-    margin-bottom: 10px; 
-    position: relative;
-    left:-30px;
-    bottom: -100px;
-    font-family: 'Reem Kufi', sans-serif;
-    font-size: 1.7em;
-    opacity: 0.6;
-    letter-spacing:0.3em ;
-}
-
-.projects-title{
-    text-align: center; 
-    margin-bottom: 10px; 
-    position: relative;
-    left:-30px;
-    bottom: -100px;
-    font-family: 'Reem Kufi', sans-serif;
-    font-size: 2.7em;   
-    color: white; 
-    letter-spacing: 0.3em;
-    opacity: 0.5;
-    text-decoration: underline;
-
-}
-.projects-title:hover {
-    opacity: 1;  
-    color:white; 
-    transform: scale(1.05); 
-    transition: all 0.3s ease; 
-}
-
-
-.project-title{
-    background-color:#32470b; 
-    color: white;
-    font-family: 'Reem Kufi', sans-serif;
-    position: relative;
-    letter-spacing: 0.1em;
-    font-weight: 80; 
-    line-height: 1.6;
-
-}
-
-
-
-
-/* Skills Section Styling */
-/* Header Styling */
-
-/* #skills { */
-    /* padding-top: 80px; Adjust space between sections */
-/* }
-.skills-header {
-    text-align: center;
-    margin-bottom: 30px;
-  }
-  
-.section-intro {
-    font-size: 1.5em;
-    opacity: 0.6;
-    text-transform: uppercase;
-    letter-spacing: 0.2em;
-    position: relative;
-    bottom: 10px;
-}
-
-  
-.skills-title {
-    font-size: 2.1em;
-    font-weight: bold;
-    letter-spacing: 0.3em;
-    text-transform: uppercase;
-    position: relative;
-    bottom: 10px;
-    left: -26px;
-}
-
-.skills-title:hover {
-    opacity: 1;  
-    color:white; 
-    transform: scale(1.05); 
-    transition: all 0.3s ease; 
-} */
-
-  
-
-
-/* Contact Section Styling */
-.contact {
-    color: white;
-    font-family: 'Reem Kufi', sans-serif;
-}
-
-/* Header of the Contact Section */
-.contact-header {
-    text-align: center;
-    margin-bottom: 50px;
-}
-
-
-.section-intro{
-    font-size: 2.4em;
-    letter-spacing: 0.3em;
-    opacity: 0.8;
-    bottom: -100px;
-    position: relative;
-}
-.contact-title {
-    font-size: 2em;
-    letter-spacing: 0.3em;
-    opacity: 0.8;
-    bottom: -100px;
-    position: relative;
-    left: -30px;
-}
-
-.contact-title:hover {
-    opacity: 1;  
-    color:white; 
-    transform: scale(1.05); 
-    transition: all 0.3s ease; 
-}
-
-.contact-content {
-    display: flex;
-    gap: 50px;
-    justify-content: center;
-    flex-wrap: wrap;
-    bottom: -160px;
-    left: -9px;
-    position: relative;
-}
-
-/* Contact Info Section */
-.contact-info {
-    flex: 1;
-    max-width: 400px;
-}
-
-.contact-info h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
-.contact-info p {
-    font-size: 1.2em;
-    margin-bottom: 30px;
-    font-family: 'Reem Kufi', sans-serif;
-}
-
-.contact-links {
-    list-style: none;
-    padding: 0;
-    font-size: 1.2em;
-}
-
-.contact-links li {
-    margin-bottom: 15px;
-}
-
-.contact-link {
-    color: white;
-    text-decoration: none;
-    transition: all 0.3s ease;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.contact-link i {
-    font-size: 1.5em;
-}
-
-.contact-link:hover {
-    color: #556d3e;
-}
-
-.contact-link:hover i {
-    transform: scale(1.1);
-}
-
-/* Contact Form Styling */
-.contact-form {
-    flex: 1;
-    max-width: 600px;
-}
-
-.contact-form form {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.contact-form input,
-.contact-form textarea {
-    padding: 12px;
-    font-size: 1.1em;
-    border: none;
-    border-radius: 5px;
-    background-color: #4b6b32;
-    color: white;
-    outline: none;
-    resize: none;
-}
-
-.contact-form input:focus,
-.contact-form textarea:focus {
-    background-color: #556d3e;
-    border: 2px solid #556d3e;
-}
-
-.contact-form button {
-    padding: 12px 30px;
-    font-size: 1.2em;
-    color: white;
-    background-color: #32470b;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.contact-form button:hover {
-    background-color: #556d3e;
-    transform: scale(1.05);
-}
-
-.contact-form button:active {
-    transform: scale(0.95);
-}
-
-.hand-icon {
-    position: relative;
-    left: 150px;
-    bottom: -4px;
-    width: 20px;
-    height: 20px;
-    fill: white;  /* Ensures the icon is white */
-    transition: transform 0.3s ease;
-}
-
-.icon.arrow {
-    position: relative;
-    left: 1250px;
-    bottom:340px;
-    width: 80px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-  }
-
-.icon.arrow:hover{
-    color: goldenrod;
-    transform: scale(1.1);
-}
-
-
-/* Active (Click) effect */
-
-.icon.arrow:active{
-    transform: scale(0.8);
     
-}
-
-
-.about-arrow{
-    position: relative;
-    left: 1150px;
-    bottom:500px;
-    width: 80px;
-    cursor: pointer;
-}
-
-.about-arrow:hover{
-    color: goldenrod;
-    transform: scale(1.1);
-}
-
-
-
-.about-arrow:active{
-    transform: scale(0.8);
+    .logo-title {
+        font-size: 16px;
+    }
     
-}
-
-.project-arrow{
-    position: relative;
-    left: 1250px;
-    top:-9px;
-    width: 80px;
-    cursor: pointer;
-}
-
-.project-arrow:hover{
-    color: goldenrod;
-    transform: scale(1.1);
-}
-
-
-
-.project-arrow:active{
-    transform: scale(0.8);
+    .logo-tagline {
+        font-size: 10px;
+    }
     
+    .navbar {
+        display: none;
+    }
+    
+    .search-section {
+        display: none;
+    }
+    
+    #menu-icon {
+        display: block;
+    }
+    
+    .search-input {
+        width: 200px;
+    }
 }
 
-.footer{
-    position: relative;
-    bottom:-290px;
-    left: 530px;
-}
-
-
+@media (max-width: 480px) {
+    .header {
+        padding: 10px 15px;
+    }
+    
+    .logo-icon {
+        width: 35px;
+        height: 35px;
+        font-size: 18px;
+    }
+    
+    .logo-title {
+        font-size: 14px;
+    }
+    
+    .logo-tagline {
+        font-size: 9px;
+    }
 }
